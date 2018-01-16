@@ -1,0 +1,45 @@
+@import './util/reset';
+@import './mixins';
+
+$NAME: button;
+
+
+.#{$PREFIX}-#{$NAME} {
+  @extend %reset;
+  margin-bottom: $size-sm;
+  margin-right: $size-xs;
+  padding: $size-sm $size-lg;
+  font-size: $size-md;
+  transition:
+    background-color $transition-fast,
+    box-shadow $transition-md;
+  border-radius: $radius-sm;
+  letter-spacing: $letter-spacing-1;
+
+  &--float {
+    box-shadow: $shadow-md;
+    &:hover {
+      box-shadow: $shadow-lg;
+    }
+  }
+
+  &--small { 
+    padding: $size-xs $size-md;
+    font-size: $size-sm;
+  }
+
+  &--large { 
+    padding: $size-md $size-xl;
+    font-size: $size-lg;
+  }
+
+  &--block {
+    display: block;
+    padding: $size-lg;
+    font-size: $size-md;
+    width: 100%;
+  }
+
+  &--primary { @include themed-button($color-white, $color-primary); }
+  &--secondary { @include themed-button($color-white, $color-secondary, darken); }
+}

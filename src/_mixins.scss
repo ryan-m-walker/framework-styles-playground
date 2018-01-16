@@ -1,0 +1,21 @@
+
+@mixin themed-button($foreground, $background, $hoverColorFunction: "lighten") {
+  color: $foreground;
+  background: $background;
+
+  &:hover {
+    @if $hoverColorFunction == "darken" {
+      background: darken($background, 3);
+    } @else {
+      background: lighten($background, 3);
+    }
+  }
+
+  &:active {
+    @if $hoverColorFunction == "darken" {
+      background: darken($background, 5);
+    } @else {
+      background: lighten($background, 5);
+    }
+  }
+}

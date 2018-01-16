@@ -1,0 +1,70 @@
+.uni-button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%; }
+  .uni-button::before, .uni-button::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%; }
+
+.uni-button {
+  margin-bottom: 8px;
+  margin-right: 5px;
+  padding: 8px 13px;
+  font-size: 10px;
+  transition: background-color 180ms, box-shadow 220ms;
+  border-radius: 3px;
+  letter-spacing: 1px; }
+  .uni-button--float {
+    box-shadow: 2px 2px 8px rgba(17, 17, 17, 0.5); }
+    .uni-button--float:hover {
+      box-shadow: 3px 3px 6px rgba(17, 17, 17, 0.6); }
+  .uni-button--small {
+    padding: 5px 10px;
+    font-size: 8px; }
+  .uni-button--large {
+    padding: 10px 15px;
+    font-size: 13px; }
+  .uni-button--block {
+    display: block;
+    padding: 13px;
+    font-size: 10px;
+    width: 100%; }
+  .uni-button--primary {
+    color: #fafafa;
+    background: teal; }
+    .uni-button--primary:hover {
+      background: #008f8f; }
+    .uni-button--primary:active {
+      background: #009a9a; }
+  .uni-button--secondary {
+    color: #fafafa;
+    background: orange; }
+    .uni-button--secondary:hover {
+      background: #f09b00; }
+    .uni-button--secondary:active {
+      background: #e69500; }
+
+p {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.text-xs {
+  font-size: 10px; }
+
+.text-sm {
+  font-size: 12px; }
+
+.text-md {
+  font-size: 14px; }
+
+.text-lg {
+  font-size: 20px; }
+
+.text-xl {
+  font-size: 26px; }
+
+/*# sourceMappingURL=style.css.map */

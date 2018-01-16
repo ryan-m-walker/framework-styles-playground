@@ -1,0 +1,74 @@
+
+// CONSTANTS:
+
+$PREFIX: uni;
+
+$UNITS: px;
+$BASE: 10;
+
+
+@function size($num) {
+  @if $UNITS == 'px' { 
+    @return round(($num * $BASE))#{$UNITS}; 
+  } @else { 
+    @return ($num * $BASE)#{$UNITS}; 
+  }
+}
+
+// SIZES:
+
+$size-xxxs: size(0.125);
+$size-xxs:  size(0.25);
+$size-xs:   size(0.5);
+$size-sm:   size(0.75);
+$size-md:   size(1);
+$size-lg:   size(1.25);
+$size-xl:   size(1.5);
+$size-xxl:  size(1.75);
+$size-xxxl: size(2);
+
+// FONT SIZES:
+
+$font-size-xs: size(1);
+$font-size-sm: size(1.2);
+$font-size-md: size(1.4);
+$font-size-lg: size(2);
+$font-size-xl: size(2.6);
+
+
+// COLORS:
+
+$color-white: #fafafa;
+$color-black: #111;
+
+$color-primary: teal;
+$color-secondary: orange;
+
+
+// TRANSITIONS:
+
+$transition-slow: 280ms;
+$transition-md: 220ms;
+$transition-fast: 180ms;
+
+
+// BORDER RADIUS:
+
+$radius-sm: size(0.3);
+$radius-md: size(0.5);
+$radius-lg: size(0.7);
+
+
+// LETTER SPACING
+
+$letter-spacing-1: 1px;
+$letter-spacing-2: 2px;
+$letter-spacing-3: 3px;
+
+
+// BOX-SHADOW:
+
+$shadow-sm: size(0.1) size(0.1) size(0.2) rgba($color-black, 0.125);
+$shadow-md: size(0.2) size(0.2) size(0.75) rgba($color-black, 0.5);
+$shadow-lg: size(0.3) size(0.3) size(0.6) rgba($color-black, 0.6);
+
